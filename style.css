@@ -77,29 +77,39 @@ button {
 	display: flex;
 	display: -webkit-flex;
 	align-items: center;
-}
-
-@media screen and (max-width: 991px) {
-	.header {
-		padding: 0 48px;
-	}
+	justify-content: space-between;
 }
 
 @media screen and (max-width: 767px) {
 	.header {
-		padding: 0;
+		padding: 36px 24px 24px 24px;
 	}
 }
 
-@media screen and (max-width: 767px) {
-	.logo {
-		padding-left: 38px;
+@media screen and (max-height: 479px) {
+	.header {
+		padding: 36px;
 	}
+}
+
+.logo {
+	margin-top: 7px;
 }
 
 @media screen and (max-width: 479px) {
-	.logo {
-		padding-left: 24px;
+	.logo img {
+		width: 72px;
+	}
+}
+
+.instagram__link {
+	z-index: 1;
+}
+
+@media screen and (max-width: 479px) {
+	.instagram__link svg {
+		height: 96px;
+		width: 96px;
 	}
 }
 
@@ -127,8 +137,15 @@ button {
 	align-items: center;
 	justify-content: center;
 	height: 80vh;
+	width: 100%;
 	max-width: 1444px;
 	margin: 0 auto;
+}
+
+@media screen and (max-height: 479px) {
+	.form__body {
+		height: 100%;
+	}
 }
 
 .form__content__container {
@@ -137,12 +154,18 @@ button {
 	z-index: 1;
 }
 
+@media screen and (max-width: 479px) {
+	.form__content__container {
+		padding: 12px 24px;
+	}
+}
+
 #form {
 	background-color: #fff;
 	border-radius: 24px;
 	color: #2c1138;
 	margin: auto;
-	width: 440px;
+	max-width: 440px;
 	padding: 48px;
 	display: flex;
 	justify-content: center;
@@ -150,17 +173,54 @@ button {
 	flex-direction: column;
 }
 
+@media screen and (max-width: 479px) {
+	#form {
+		padding: 24px;
+	}
+}
+
+@media screen and (max-height: 375px) {
+	#form {
+		padding: 24px;
+	}
+}
+
 .form__content__description {
 	font-size: 24px;
 	color: #24132b;
+	margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 479px) {
+	.form__content__description {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-height: 375px) {
+	.form__content__description {
+		font-size: 18px;
+	}
 }
 
 .form__content__note {
 	color: #9d90a2;
 }
 
+@media screen and (max-width: 479px) {
+	.form__content__note {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-height: 375px) {
+	.form__content__note {
+		font-size: 14px;
+	}
+}
+
 .form__field {
-	margin-top: 2.5rem;
+	margin: 1.25rem 0;
 	width: 100%;
 }
 
@@ -175,6 +235,31 @@ button {
 	text-align: center;
 	font-family: 'Circe', sans-serif;
 	font-size: 17px;
+	color: #24132b;
+	transition: all 0.1s linear;
+}
+
+.form__input:hover {
+	border-color: #cec7d1;
+	background-color: #f8f7f8;
+}
+
+.form__input:focus {
+	box-shadow: 0 0 0 4px rgba(127, 103, 138, 0.125);
+	background-color: #fff;
+	border-color: #8b50e8;
+}
+
+@media screen and (max-width: 479px) {
+	.form__input {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-height: 375px) {
+	.form__input {
+		font-size: 16px;
+	}
 }
 
 ::placeholder {
@@ -182,10 +267,20 @@ button {
 }
 
 .form__submit {
-	margin-top: 1.25rem;
 	color: #fff;
 	width: 100%;
 	background: #8b50e8;
 	height: 52px;
 	border-radius: 16px;
+	transition: all 0.15s linear;
+}
+
+.form__submit:hover {
+	opacity: 0.8;
+}
+
+@media screen and (max-height: 375px) {
+	.form__submit {
+		font-size: 16px;
+	}
 }
