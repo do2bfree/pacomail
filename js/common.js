@@ -7,7 +7,7 @@ $(document).ready(function() {
 			data: $(this).serialize()
 		}).done(function() {
 			$(this).find("input").val("");
-			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+			alert("Спасибо! Вы будете первым, кто узнает об обновлениях.");
 			$("#form").trigger("reset");
 		});
 		return false;
