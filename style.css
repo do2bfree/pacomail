@@ -78,11 +78,14 @@ button {
 	display: -webkit-flex;
 	align-items: center;
 	justify-content: space-between;
+	max-width: 1444px;
+	width: 100%;
+	margin: 0 auto;
 }
 
 @media screen and (max-width: 767px) {
 	.header {
-		padding: 36px 24px 24px 24px;
+		padding: 0 36px;
 	}
 }
 
@@ -104,13 +107,6 @@ button {
 
 .instagram__link {
 	z-index: 1;
-}
-
-@media screen and (max-width: 479px) {
-	.instagram__link svg {
-		height: 96px;
-		width: 96px;
-	}
 }
 
 .form__bg {
@@ -175,20 +171,26 @@ button {
 
 @media screen and (max-width: 479px) {
 	#form {
+		padding: 32px;
+	}
+}
+
+@media screen and (max-width: 321px) {
+	#form {
 		padding: 24px;
 	}
 }
 
 @media screen and (max-height: 375px) {
 	#form {
-		padding: 24px;
+		padding: 32px;
 	}
 }
 
 .form__content__description {
 	font-size: 24px;
 	color: #24132b;
-	margin-bottom: 0.5rem;
+	margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 479px) {
@@ -220,7 +222,7 @@ button {
 }
 
 .form__field {
-	margin: 1.25rem 0;
+	margin: 1.75rem 0 1rem 0;
 	width: 100%;
 }
 
@@ -259,6 +261,7 @@ button {
 @media screen and (max-height: 375px) {
 	.form__input {
 		font-size: 16px;
+		height: 48px;
 	}
 }
 
@@ -282,5 +285,6 @@ button {
 @media screen and (max-height: 375px) {
 	.form__submit {
 		font-size: 16px;
+		height: 48px;
 	}
 }
