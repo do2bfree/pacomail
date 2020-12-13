@@ -9,7 +9,7 @@
 	font-family: 'Circe';
 	font-style: normal;
 	font-weight: normal;
-	src: url('assets/fonts/CRC55.woff') format('woff');
+	src: url('assets/fonts/fc2a6498c769.woff') format('woff');
 	font-display: swap;
 }
 
@@ -17,7 +17,15 @@
 	font-family: 'Circe Bold';
 	font-style: normal;
 	font-weight: normal;
-	src: url('assets/fonts/CRC65.woff') format('woff');
+	src: url('assets/fonts/12b20b27b37b.woff') format('woff');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Circe Light';
+	font-style: normal;
+	font-weight: normal;
+	src: url('assets/fonts/6444e13db381.woff') format('woff');
 	font-display: swap;
 }
 
@@ -64,29 +72,32 @@ button {
 }
 
 .form {
-	background: #2c1138;
+	background: #fff;
 	min-height: 100vh;
 	letter-spacing: 0;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 }
 
 .header {
-	display: flex;
-	display: -webkit-flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	padding: 64px 0 0;
+	padding: 0 0 32px;
+	margin: 0 auto;
+}
+
+@media screen and (max-height: 650px) {
+	.header {
+		padding-top: 48px;
+	}
 }
 
 .logo img {
 	width: 192px;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 359px) {
 	.logo img {
-		width: 128px;
+		width: 144px;
 	}
 }
 
@@ -94,7 +105,6 @@ button {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 80vh;
 	width: 100%;
 	max-width: 1444px;
 	margin: 0 auto;
@@ -124,22 +134,23 @@ button {
 	color: #2c1138;
 	margin: auto;
 	max-width: 440px;
-	padding: 48px;
+	padding: 56px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	box-shadow: 0px 3px 28px 6px rgba(168, 118, 245, 0.18);
 }
 
 @media screen and (max-width: 479px) {
 	#form {
-		padding: 32px;
+		padding: 36px;
 	}
 }
 
 @media screen and (max-width: 321px) {
 	#form {
-		padding: 24px;
+		padding: 28px;
 	}
 }
 
@@ -151,8 +162,9 @@ button {
 
 .form__content__description {
 	font-size: 24px;
-	color: #24132b;
-	margin-bottom: 1rem;
+	color: #2c1138;
+	text-align: left;
+	font-family: 'Circe Light', sans-serif;
 }
 
 @media screen and (max-width: 479px) {
@@ -168,7 +180,9 @@ button {
 }
 
 .form__content__note {
-	color: #9d90a2;
+	color: #2c113899;
+	text-align: center;
+	font-family: 'Circe Light', sans-serif;
 }
 
 @media screen and (max-width: 479px) {
@@ -184,7 +198,7 @@ button {
 }
 
 .form__field {
-	margin: 1.75rem 0 1rem 0;
+	margin: 2rem 0 1rem 0;
 	width: 100%;
 }
 
@@ -193,31 +207,24 @@ button {
 	padding: 0 10px;
 	height: 52px;
 	line-height: 16px;
-	border-radius: 16px;
-	border: 1px solid #9d90a2;
+	border-radius: 300px;
+	border: 1px solid transparent;
 	outline: none;
 	text-align: center;
 	font-family: 'Circe', sans-serif;
 	font-size: 17px;
-	color: #24132b;
+	color: #2c1138;
+	background-color: #f5f2fd;
 	transition: all 0.1s linear;
 }
 
 .form__input:hover {
-	border-color: #cec7d1;
-	background-color: #f8f7f8;
+	background-color: #f5f2fd85;
 }
 
 .form__input:focus {
-	box-shadow: 0 0 0 4px rgba(127, 103, 138, 0.125);
 	background-color: #fff;
 	border-color: #a876f5;
-}
-
-@media screen and (max-width: 479px) {
-	.form__input {
-		font-size: 14px;
-	}
 }
 
 @media screen and (max-height: 375px) {
@@ -228,7 +235,7 @@ button {
 }
 
 ::placeholder {
-	color: #9d90a2;
+	color: #2c113899;
 }
 
 .form__submit {
@@ -236,8 +243,9 @@ button {
 	width: 100%;
 	background: #a876f5;
 	height: 52px;
-	border-radius: 16px;
+	border-radius: 300px;
 	transition: all 0.15s linear;
+	margin-bottom: 2rem;
 }
 
 .form__submit:hover {
