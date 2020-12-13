@@ -9,3 +9,4 @@ $message = "Почта: $email";
 $pagetitle = "Новый имейл с сайта \"$sitename\"";
 
 mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-8\"\n From: $recepient");
+echo "Сообщение отправлено. Спасибо Вам, мы скоро свяжемся с Вами.";
