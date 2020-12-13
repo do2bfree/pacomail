@@ -72,45 +72,22 @@ button {
 }
 
 .header {
-	height: 10vh;
-	padding: 0 60px;
 	display: flex;
 	display: -webkit-flex;
 	align-items: center;
-	justify-content: space-between;
-	max-width: 1444px;
+	justify-content: center;
 	width: 100%;
-	margin: 0 auto;
-}
-
-@media screen and (max-width: 767px) {
-	.header {
-		padding: 0 36px;
-	}
-}
-
-@media screen and (max-height: 479px) {
-	.header {
-		padding: 36px;
-	}
-}
-
-.logo {
-	margin-top: 7px;
+	padding: 64px 0 0;
 }
 
 .logo img {
-	width: 128px;
+	width: 192px;
 }
 
 @media screen and (max-width: 479px) {
 	.logo img {
-		width: 72px;
+		width: 128px;
 	}
-}
-
-.instagram__link {
-	z-index: 1;
 }
 
 .form__body {
@@ -234,7 +211,7 @@ button {
 .form__input:focus {
 	box-shadow: 0 0 0 4px rgba(127, 103, 138, 0.125);
 	background-color: #fff;
-	border-color: #8b50e8;
+	border-color: #a876f5;
 }
 
 @media screen and (max-width: 479px) {
@@ -257,7 +234,7 @@ button {
 .form__submit {
 	color: #fff;
 	width: 100%;
-	background: #8b50e8;
+	background: #a876f5;
 	height: 52px;
 	border-radius: 16px;
 	transition: all 0.15s linear;
