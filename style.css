@@ -258,3 +258,34 @@ button {
 		height: 48px;
 	}
 }
+
+.social {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 2rem 0;
+}
+
+.instagram {
+	margin-right: 24px;
+	opacity: 0.5;
+	transition: all 0.2s ease-in;
+}
+
+.instagram:hover {
+	opacity: 1;
+}
+
+.wildberries {
+	opacity: 0.5;
+	transition: all 0.2s ease-in;
+}
+
+.wildberries:hover {
+	opacity: 1;
+}
+
+.wildberries img {
+	width: 36px;
+	border-radius: 10px;
+}
