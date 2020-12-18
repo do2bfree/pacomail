@@ -81,14 +81,8 @@ button {
 }
 
 .header {
-	padding: 0 0 32px;
+	padding: 48px 0 32px;
 	margin: 0 auto;
-}
-
-@media screen and (max-height: 650px) {
-	.header {
-		padding-top: 48px;
-	}
 }
 
 .logo img {
